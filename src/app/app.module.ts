@@ -35,8 +35,10 @@ export const COMBOBOX_MOBILE_CONFIG: MobileModeConfigToken = {
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    PlatformComboboxModule,
-    PlatformComboboxMobileModule,
+    // PlatformComboboxModule,
+    // PlatformComboboxMobileModule,
+
+
 
   ],
   providers: [

@@ -1,13 +1,27 @@
 <h1>Test Fiori Combo</h1>
 <div style="width: 600px">
-  <fdp-combobox
-    name="standard"
-    placeholder="Type some text..."
-    [dataSource]="dataSource"
-    (selectionChange)="onSelect1($event)"
-  ></fdp-combobox>
+<!--  <fdp-combobox-->
+<!--    name="standard"-->
+<!--    placeholder="Type some text..."-->
+<!--    [dataSource]="dataSource"-->
+<!--    (selectionChange)="onSelect1($event)"-->
+<!--  ></fdp-combobox>-->
 </div>
 
 <div>
-  {{this.selectedItem}}
+  {{selectedItem}}
 </div>
+
+
+<div style="width: 600px; margin-top: 40px">
+  <h2>With Component Factory Resolver </h2>
+  <ng-container #comboVC></ng-container>
+
+</div>
+
+
+<!--<div style="width: 600px; margin-top: 40px">-->
+<!--  <h2>With Angular Compiler  </h2>-->
+<!--  <ng-container *ngComponentOutlet="ngComponent; ngModuleFactory: ngModule"></ng-container>-->
+
+<!--</div>-->
