@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {ComboboxSelectionChangeEvent} from '@fundamental-ngx/platform';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'fiori-test';
+  dataSource = [
+    'Apple',
+    'Banana',
+    'Pineapple',
+    'Strawberry',
+    'Broccoli',
+    'Carrot',
+    'Jalapeño',
+    'Spinach'
+  ];
+  selectedItem: any;
+
+  onSelect1(item: ComboboxSelectionChangeEvent): void {
+    this.selectedItem = item.payload;
+  }
 }

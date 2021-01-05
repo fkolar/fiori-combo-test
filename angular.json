@@ -28,6 +28,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/fundamental-styles/dist/icon.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -59,6 +60,22 @@
                   "maximumError": "10kb"
                 }
               ]
+            },
+            "ar": {
+              "aot": true,
+              "outputPath": "dist/fiori-test/locale/ar",
+              "i18nFile": "src/locale/ar/messages.ar.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "ar",
+              "i18nMissingTranslation": "error"
+            },
+            "fr": {
+              "aot": true,
+              "outputPath": "dist/fiori-test/locale/fr",
+              "i18nFile": "src/locale/fr/messages.fr.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "fr",
+              "i18nMissingTranslation": "error"
             }
           }
         },
@@ -70,6 +87,12 @@
           "configurations": {
             "production": {
               "browserTarget": "fiori-test:build:production"
+            },
+            "ar": {
+              "browserTarget": "fiori-test:build:ar"
+            },
+            "fr": {
+              "browserTarget": "fiori-test:build:fr"
             }
           }
         },
